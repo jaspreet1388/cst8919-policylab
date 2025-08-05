@@ -1,0 +1,39 @@
+{
+  "properties": {
+    "displayName": "denypublic-ip",
+    "policyType": "Custom",
+    "mode": "All",
+    "description": "deny the public ip ",
+    "metadata": {
+      "createdBy": "673434c9-c7fb-46f3-8d8a-254452d73c61",
+      "createdOn": "2025-08-05T02:09:59.9641294Z",
+      "updatedBy": null,
+      "updatedOn": null
+    },
+    "version": "1.0.0",
+    "parameters": {},
+    "policyRule": {
+      "if": {
+        "field": "type",
+        "equals": "Microsoft.Network/publicIPAddresses"
+      },
+      "then": {
+        "effect": "deny"
+      }
+    },
+    "versions": [
+      "1.0.0"
+    ]
+  },
+  "id": "/subscriptions/1dcb97e8-a9e3-477e-ab93-25569869c665/providers/Microsoft.Authorization/policyDefinitions/3f16a2a7-b2e6-442b-bf73-4433f52b421b",
+  "type": "Microsoft.Authorization/policyDefinitions",
+  "name": "3f16a2a7-b2e6-442b-bf73-4433f52b421b",
+  "systemData": {
+    "createdBy": "chha0038@algonquinlive.com",
+    "createdByType": "User",
+    "createdAt": "2025-08-05T02:09:59.8931922Z",
+    "lastModifiedBy": "chha0038@algonquinlive.com",
+    "lastModifiedByType": "User",
+    "lastModifiedAt": "2025-08-05T02:09:59.8931922Z"
+  }
+}
