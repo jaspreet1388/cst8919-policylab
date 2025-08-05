@@ -90,7 +90,7 @@ All three were grouped into a single initiative called **`maplesecure-foundation
 
 ---
 
-## 🧠 Lessons Learned
+## Lessons Learned
 
 - Matching scope between **policy** and **initiative** is critical.
 - Azure Policy can enforce compliance **before** resource creation — proactively.
