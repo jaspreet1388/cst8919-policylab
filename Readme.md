@@ -106,6 +106,7 @@ All three were grouped into a single initiative called **`maplesecure-foundation
 This lab demonstrated how **Azure Policy** can enforce governance automatically.  
 It's a powerful tool for securing cloud environments, ensuring compliance, and enabling DevOps teams to maintain control over growing cloud infrastructure — without manual reviews.
 
+## Youtube Tutorial Link : https://youtu.be/72uCr7LHK-U
 
 
 
