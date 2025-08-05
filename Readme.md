@@ -66,5 +66,46 @@ All three were grouped into a single initiative called **`maplesecure-foundation
 
 ---
 
+## Challenges Faced
+
+1. **Policies not showing in initiative scope**
+   - Initially, custom policy definitions didn’t appear when trying to add them to the initiative.
+   - **Reason:** The policy scope and initiative scope were mismatched.
+
+2. **Incorrect use of tag alias**
+   - The wrong alias for tags was used in the `require-projectname-tag` policy.
+   - Resolved using: `"field": "[concat('tags[', 'ProjectName', ']')]"`
+
+3. **Unexpected deployment failures**
+   - Even compliant resources failed due to small mistakes like missing tags or wrong regions.
+
+4. **Policy evaluation delay**
+   - Some enforcement didn't happen instantly after assignment.
+
+5. **Uncertainty with initiative parameters**
+   - Unsure whether parameters were needed (they weren’t for this lab).
+
+6. **No enforcement until assignment**
+   - Learned that policies must be explicitly assigned to enforce rules.
+
+---
+
+## 🧠 Lessons Learned
+
+- Matching scope between **policy** and **initiative** is critical.
+- Azure Policy can enforce compliance **before** resource creation — proactively.
+- **Initiatives** simplify grouping and managing multiple policies.
+- Custom policy creation requires careful use of **Azure resource aliases**.
+- Always **test both compliant and non-compliant scenarios**.
+- Clear documentation, naming, and structure help maintain governance.
+
+---
+
+## Conclusion
+
+This lab demonstrated how **Azure Policy** can enforce governance automatically.  
+It's a powerful tool for securing cloud environments, ensuring compliance, and enabling DevOps teams to maintain control over growing cloud infrastructure — without manual reviews.
+
+
 
 
